@@ -2,13 +2,13 @@
 
 达梦数据库`gorm`驱动
 
-Fork: **[https://github.com/nfjBill/gorm-driver-dm](https://github.com/nfjBill/gorm-driver-dm)**
+Fork: **[https://github.com/jeyrce/gorm-dm8-driver](https://github.com/jeyrce/gorm-dm8-driver)**
 
 ## dm8
 
 ```go
 import (
-  "github.com/jeyrce/gorm-dm8-driver"
+  "github.com/riven-repo/gorm-dm8-driver"
   "gorm.io/gorm"
 )
 
