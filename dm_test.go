@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	dmSchema "github.com/jeyrce/gorm-dm8-driver/schema"
+	dmSchema "github.com/riven-repo/gorm-dm8-driver/schema"
 	"gorm.io/gorm"
 )
 

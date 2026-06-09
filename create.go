@@ -5,7 +5,7 @@ import (
 	"database/sql"
 	"reflect"
 
-	"github.com/jeyrce/gorm-dm8-driver/clauses"
+	"github.com/riven-repo/gorm-dm8-driver/clauses"
 	"github.com/thoas/go-funk"
 	"gorm.io/gorm"
 	"gorm.io/gorm/callbacks"

@@ -13,7 +13,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/jeyrce/gorm-dm8-driver/dmr/util"
+	"github.com/riven-repo/gorm-dm8-driver/dmr/util"
 )
 
 var LogDirDef, _ = os.Getwd()

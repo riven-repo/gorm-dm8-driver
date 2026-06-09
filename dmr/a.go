@@ -11,7 +11,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/jeyrce/gorm-dm8-driver/dmr/security"
+	"github.com/riven-repo/gorm-dm8-driver/dmr/security"
 )
 
 const (

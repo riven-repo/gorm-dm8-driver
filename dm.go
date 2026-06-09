@@ -7,8 +7,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/jeyrce/gorm-dm8-driver/clauses"
-	_ "github.com/jeyrce/gorm-dm8-driver/dmr"
+	"github.com/riven-repo/gorm-dm8-driver/clauses"
+	_ "github.com/riven-repo/gorm-dm8-driver/dmr"
 	"github.com/thoas/go-funk"
 	"gorm.io/gorm"
 	"gorm.io/gorm/callbacks"
@@ -171,9 +171,9 @@ func (d Dialector) RewriteLimit(c clause.Clause, builder clause.Builder) {
 			builder.WriteString(strconv.Itoa(offset))
 			builder.WriteString(" ROWS")
 		}
-		if limit := limit.Limit; limit > 0 {
+		if limit := limit.Limit; limit != nil && *limit > 0 {
 			builder.WriteString(" FETCH NEXT ")
-			builder.WriteString(strconv.Itoa(limit))
+			builder.WriteString(strconv.Itoa(*limit))
 			builder.WriteString(" ROWS ONLY")
 		}
 	}
